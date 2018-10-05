@@ -13,6 +13,8 @@ def process_file(path):
 
 
 def get_dict_value(word_freq={}, keys=[]):
+    """如果keys为字符串,返回word_freq字典中以keys为键的值。
+    如果keys为列表,则使用eval()函数进行字符串拼接，深度查找word_freq字典中以keys为键的值。"""
     if type(keys).__name__ == 'str':
         return word_freq[keys]
     else:
@@ -33,6 +35,8 @@ def get_dict_value(word_freq={}, keys=[]):
 
 
 def process_buffer(textString, num=3):
+    """当只统计单词时（num == 1），生成<str,int>形式的键值对,
+    当统计短语时，生成字典套字典的形式，具体参考sample.json文件"""
     if textString:
         word_freq = {}
         word_list = textString.split()
@@ -62,31 +66,27 @@ def process_buffer(textString, num=3):
         return word_freq
 
 
-def format_dict(word_freq={}, num=3):
+def format_dict(word_freq={}):
+    """对统计短语的情况生成的复杂字典进行格式化，格式化后的形式为<str,int>"""
     formated_word_freq = {}
-    if num == 1:
-        for word in word_freq.keys():
-            formated_word_freq[word] = word_freq[word]['Value']
-    else:
-        phrases = []
-        for word in word_freq.keys():
-            phrases.append(word)
-        while len(phrases) > 0:
-            phrase = phrases[0]
-            if len(get_dict_value(word_freq, phrase)) == 1 and type(phrase).__name__ == 'list':
-                formated_word_freq[' '.join(phrase)] = get_dict_value(word_freq, phrase)['Value']
-            else:
-                for nextword in get_dict_value(word_freq, phrase):
-                    temp = []
-                    if type(phrase).__name__ == 'str':
-                        temp.append(phrase)
-                    else:
-                        temp.extend(phrase)
-                    if nextword != 'Value':
-                        temp.append(nextword)
-                        phrases.append(temp)
-            phrases.pop(0)
-
+    phrases = []
+    for word in word_freq.keys():
+        phrases.append(word)
+    while len(phrases) > 0:
+        phrase = phrases[0]
+        if len(get_dict_value(word_freq, phrase)) == 1 and type(phrase).__name__ == 'list':
+            formated_word_freq[' '.join(phrase)] = get_dict_value(word_freq, phrase)['Value']
+        else:
+            for nextword in get_dict_value(word_freq, phrase):
+                temp = []
+                if type(phrase).__name__ == 'str':
+                    temp.append(phrase)
+                else:
+                    temp.extend(phrase)
+                if nextword != 'Value':
+                    temp.append(nextword)
+                    phrases.append(temp)
+        phrases.pop(0)
     # print(formated_word_freq)
     return formated_word_freq
 
@@ -111,5 +111,5 @@ if __name__ == "__main__":
     if buffer:
         word_freq = process_buffer(buffer, num)
         if num != 1:
-            word_freq = format_dict(word_freq, num)
+            word_freq = format_dict(word_freq)
         output_result(word_freq)
