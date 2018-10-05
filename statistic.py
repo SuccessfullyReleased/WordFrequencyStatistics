@@ -36,21 +36,29 @@ def process_buffer(textString, num=3):
     if textString:
         word_freq = {}
         word_list = textString.split()
-        count = len(word_list)
-        i = 0
-        while i < count:
-            finish = i
-            start = i - num + 1
-            if start < 0:
-                start = 0
-            index = i
-            while index >= start:
-                if word_list[i] in get_dict_value(word_freq, word_list[index: finish]).keys():
-                    get_dict_value(word_freq, word_list[index: finish])[word_list[i]]['Value'] += 1
+        if num == 1:
+            for word in word_list:
+                if word in word_freq:
+                    word_freq[word] += 1
                 else:
-                    get_dict_value(word_freq, word_list[index: finish]).update({word_list[i]: {'Value': 1}})
-                index -= 1
-            i += 1
+                    word_freq[word] = 1
+        else:
+            count = len(word_list)
+            i = 0
+            while i < count:
+                finish = i
+                start = i - num + 1
+                if start < 0:
+                    start = 0
+                index = i
+                while index >= start:
+                    if word_list[i] in get_dict_value(word_freq, word_list[index: finish]).keys():
+                        get_dict_value(word_freq, word_list[index: finish])[word_list[i]]['Value'] += 1
+                    else:
+                        get_dict_value(word_freq, word_list[index: finish]).update({word_list[i]: {'Value': 1}})
+                    index -= 1
+                i += 1
+
         return word_freq
 
 
@@ -102,5 +110,6 @@ if __name__ == "__main__":
     buffer = process_file(path)
     if buffer:
         word_freq = process_buffer(buffer, num)
-        word_freq = format_dict(word_freq, num)
+        if num != 1:
+            word_freq = format_dict(word_freq, num)
         output_result(word_freq)
