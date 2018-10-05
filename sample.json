@@ -1,0 +1,719 @@
+{
+    "it": {
+        "Value": 10,
+        "was": {
+            "Value": 10,
+            "the": {
+                "Value": 10
+            }
+        }
+    },
+    "was": {
+        "Value": 11,
+        "the": {
+            "Value": 10,
+            "best": {
+                "Value": 1
+            },
+            "worst": {
+                "Value": 1
+            },
+            "age": {
+                "Value": 2
+            },
+            "epoch": {
+                "Value": 2
+            },
+            "season": {
+                "Value": 2
+            },
+            "spring": {
+                "Value": 1
+            },
+            "winter": {
+                "Value": 1
+            }
+        },
+        "so": {
+            "Value": 1,
+            "far": {
+                "Value": 1
+            }
+        }
+    },
+    "the": {
+        "Value": 14,
+        "best": {
+            "Value": 1,
+            "of": {
+                "Value": 1
+            }
+        },
+        "worst": {
+            "Value": 1,
+            "of": {
+                "Value": 1
+            }
+        },
+        "age": {
+            "Value": 2,
+            "of": {
+                "Value": 2
+            }
+        },
+        "epoch": {
+            "Value": 2,
+            "of": {
+                "Value": 2
+            }
+        },
+        "season": {
+            "Value": 2,
+            "of": {
+                "Value": 2
+            }
+        },
+        "spring": {
+            "Value": 1,
+            "of": {
+                "Value": 1
+            }
+        },
+        "winter": {
+            "Value": 1,
+            "of": {
+                "Value": 1
+            }
+        },
+        "other": {
+            "Value": 1,
+            "way": {
+                "Value": 1
+            }
+        },
+        "period": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        },
+        "present": {
+            "Value": 1,
+            "period": {
+                "Value": 1
+            }
+        },
+        "superlative": {
+            "Value": 1,
+            "degree": {
+                "Value": 1
+            }
+        }
+    },
+    "best": {
+        "Value": 1,
+        "of": {
+            "Value": 1,
+            "times": {
+                "Value": 1
+            }
+        }
+    },
+    "of": {
+        "Value": 12,
+        "times": {
+            "Value": 2,
+            "it": {
+                "Value": 2
+            }
+        },
+        "wisdom": {
+            "Value": 1,
+            "it": {
+                "Value": 1
+            }
+        },
+        "foolishness": {
+            "Value": 1,
+            "it": {
+                "Value": 1
+            }
+        },
+        "belief": {
+            "Value": 1,
+            "it": {
+                "Value": 1
+            }
+        },
+        "incredulity": {
+            "Value": 1,
+            "it": {
+                "Value": 1
+            }
+        },
+        "light": {
+            "Value": 1,
+            "it": {
+                "Value": 1
+            }
+        },
+        "darkness": {
+            "Value": 1,
+            "it": {
+                "Value": 1
+            }
+        },
+        "hope": {
+            "Value": 1,
+            "it": {
+                "Value": 1
+            }
+        },
+        "despair": {
+            "Value": 1,
+            "we": {
+                "Value": 1
+            }
+        },
+        "its": {
+            "Value": 1,
+            "noisiest": {
+                "Value": 1
+            }
+        },
+        "comparison": {
+            "Value": 1,
+            "only": {
+                "Value": 1
+            }
+        }
+    },
+    "times": {
+        "Value": 2,
+        "it": {
+            "Value": 2,
+            "was": {
+                "Value": 2
+            }
+        }
+    },
+    "worst": {
+        "Value": 1,
+        "of": {
+            "Value": 1,
+            "times": {
+                "Value": 1
+            }
+        }
+    },
+    "age": {
+        "Value": 2,
+        "of": {
+            "Value": 2,
+            "wisdom": {
+                "Value": 1
+            },
+            "foolishness": {
+                "Value": 1
+            }
+        }
+    },
+    "wisdom": {
+        "Value": 1,
+        "it": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        }
+    },
+    "foolishness": {
+        "Value": 1,
+        "it": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        }
+    },
+    "epoch": {
+        "Value": 2,
+        "of": {
+            "Value": 2,
+            "belief": {
+                "Value": 1
+            },
+            "incredulity": {
+                "Value": 1
+            }
+        }
+    },
+    "belief": {
+        "Value": 1,
+        "it": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        }
+    },
+    "incredulity": {
+        "Value": 1,
+        "it": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        }
+    },
+    "season": {
+        "Value": 2,
+        "of": {
+            "Value": 2,
+            "light": {
+                "Value": 1
+            },
+            "darkness": {
+                "Value": 1
+            }
+        }
+    },
+    "light": {
+        "Value": 1,
+        "it": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        }
+    },
+    "darkness": {
+        "Value": 1,
+        "it": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        }
+    },
+    "spring": {
+        "Value": 1,
+        "of": {
+            "Value": 1,
+            "hope": {
+                "Value": 1
+            }
+        }
+    },
+    "hope": {
+        "Value": 1,
+        "it": {
+            "Value": 1,
+            "was": {
+                "Value": 1
+            }
+        }
+    },
+    "winter": {
+        "Value": 1,
+        "of": {
+            "Value": 1,
+            "despair": {
+                "Value": 1
+            }
+        }
+    },
+    "despair": {
+        "Value": 1,
+        "we": {
+            "Value": 1,
+            "had": {
+                "Value": 1
+            }
+        }
+    },
+    "we": {
+        "Value": 4,
+        "had": {
+            "Value": 2,
+            "everything": {
+                "Value": 1
+            },
+            "nothing": {
+                "Value": 1
+            }
+        },
+        "were": {
+            "Value": 2,
+            "all": {
+                "Value": 2
+            }
+        }
+    },
+    "had": {
+        "Value": 2,
+        "everything": {
+            "Value": 1,
+            "before": {
+                "Value": 1
+            }
+        },
+        "nothing": {
+            "Value": 1,
+            "before": {
+                "Value": 1
+            }
+        }
+    },
+    "everything": {
+        "Value": 1,
+        "before": {
+            "Value": 1,
+            "us": {
+                "Value": 1
+            }
+        }
+    },
+    "before": {
+        "Value": 2,
+        "us": {
+            "Value": 2,
+            "we": {
+                "Value": 2
+            }
+        }
+    },
+    "us": {
+        "Value": 2,
+        "we": {
+            "Value": 2,
+            "had": {
+                "Value": 1
+            },
+            "were": {
+                "Value": 1
+            }
+        }
+    },
+    "nothing": {
+        "Value": 1,
+        "before": {
+            "Value": 1,
+            "us": {
+                "Value": 1
+            }
+        }
+    },
+    "were": {
+        "Value": 2,
+        "all": {
+            "Value": 2,
+            "going": {
+                "Value": 2
+            }
+        }
+    },
+    "all": {
+        "Value": 2,
+        "going": {
+            "Value": 2,
+            "direct": {
+                "Value": 2
+            }
+        }
+    },
+    "going": {
+        "Value": 2,
+        "direct": {
+            "Value": 2,
+            "to": {
+                "Value": 1
+            },
+            "the": {
+                "Value": 1
+            }
+        }
+    },
+    "direct": {
+        "Value": 2,
+        "to": {
+            "Value": 1,
+            "heaven": {
+                "Value": 1
+            }
+        },
+        "the": {
+            "Value": 1,
+            "other": {
+                "Value": 1
+            }
+        }
+    },
+    "to": {
+        "Value": 1,
+        "heaven": {
+            "Value": 1,
+            "we": {
+                "Value": 1
+            }
+        }
+    },
+    "heaven": {
+        "Value": 1,
+        "we": {
+            "Value": 1,
+            "were": {
+                "Value": 1
+            }
+        }
+    },
+    "other": {
+        "Value": 1,
+        "way": {
+            "Value": 1,
+            "in": {
+                "Value": 1
+            }
+        }
+    },
+    "way": {
+        "Value": 1,
+        "in": {
+            "Value": 1,
+            "short": {
+                "Value": 1
+            }
+        }
+    },
+    "in": {
+        "Value": 2,
+        "short": {
+            "Value": 1,
+            "the": {
+                "Value": 1
+            }
+        },
+        "the": {
+            "Value": 1,
+            "superlative": {
+                "Value": 1
+            }
+        }
+    },
+    "short": {
+        "Value": 1,
+        "the": {
+            "Value": 1,
+            "period": {
+                "Value": 1
+            }
+        }
+    },
+    "period": {
+        "Value": 2,
+        "was": {
+            "Value": 1,
+            "so": {
+                "Value": 1
+            }
+        },
+        "that": {
+            "Value": 1,
+            "some": {
+                "Value": 1
+            }
+        }
+    },
+    "so": {
+        "Value": 1,
+        "far": {
+            "Value": 1,
+            "like": {
+                "Value": 1
+            }
+        }
+    },
+    "far": {
+        "Value": 1,
+        "like": {
+            "Value": 1,
+            "the": {
+                "Value": 1
+            }
+        }
+    },
+    "like": {
+        "Value": 1,
+        "the": {
+            "Value": 1,
+            "present": {
+                "Value": 1
+            }
+        }
+    },
+    "present": {
+        "Value": 1,
+        "period": {
+            "Value": 1,
+            "that": {
+                "Value": 1
+            }
+        }
+    },
+    "that": {
+        "Value": 1,
+        "some": {
+            "Value": 1,
+            "of": {
+                "Value": 1
+            }
+        }
+    },
+    "some": {
+        "Value": 1,
+        "of": {
+            "Value": 1,
+            "its": {
+                "Value": 1
+            }
+        }
+    },
+    "its": {
+        "Value": 2,
+        "noisiest": {
+            "Value": 1,
+            "authorities": {
+                "Value": 1
+            }
+        },
+        "being": {
+            "Value": 1,
+            "received": {
+                "Value": 1
+            }
+        }
+    },
+    "noisiest": {
+        "Value": 1,
+        "authorities": {
+            "Value": 1,
+            "insisted": {
+                "Value": 1
+            }
+        }
+    },
+    "authorities": {
+        "Value": 1,
+        "insisted": {
+            "Value": 1,
+            "on": {
+                "Value": 1
+            }
+        }
+    },
+    "insisted": {
+        "Value": 1,
+        "on": {
+            "Value": 1,
+            "its": {
+                "Value": 1
+            }
+        }
+    },
+    "on": {
+        "Value": 1,
+        "its": {
+            "Value": 1,
+            "being": {
+                "Value": 1
+            }
+        }
+    },
+    "being": {
+        "Value": 1,
+        "received": {
+            "Value": 1,
+            "for": {
+                "Value": 1
+            }
+        }
+    },
+    "received": {
+        "Value": 1,
+        "for": {
+            "Value": 1,
+            "good": {
+                "Value": 1
+            }
+        }
+    },
+    "for": {
+        "Value": 2,
+        "good": {
+            "Value": 1,
+            "or": {
+                "Value": 1
+            }
+        },
+        "evil": {
+            "Value": 1,
+            "in": {
+                "Value": 1
+            }
+        }
+    },
+    "good": {
+        "Value": 1,
+        "or": {
+            "Value": 1,
+            "for": {
+                "Value": 1
+            }
+        }
+    },
+    "or": {
+        "Value": 1,
+        "for": {
+            "Value": 1,
+            "evil": {
+                "Value": 1
+            }
+        }
+    },
+    "evil": {
+        "Value": 1,
+        "in": {
+            "Value": 1,
+            "the": {
+                "Value": 1
+            }
+        }
+    },
+    "superlative": {
+        "Value": 1,
+        "degree": {
+            "Value": 1,
+            "of": {
+                "Value": 1
+            }
+        }
+    },
+    "degree": {
+        "Value": 1,
+        "of": {
+            "Value": 1,
+            "comparison": {
+                "Value": 1
+            }
+        }
+    },
+    "comparison": {
+        "Value": 1,
+        "only": {
+            "Value": 1
+        }
+    },
+    "only": {
+        "Value": 1
+    }
+}
