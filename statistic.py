@@ -69,8 +69,9 @@ def format_dict(word_freq={}):
     phrases = []
     for word in word_freq.keys():
         phrases.append(word)
-    while len(phrases) > 0:
-        phrase = phrases[0]
+    index = 0
+    while phrases[index] != phrases[-1]:
+        phrase = phrases[index]
         if len(get_dict_value(word_freq, phrase)) == 1 and type(phrase).__name__ == 'list':
             formated_word_freq[' '.join(phrase)] = get_dict_value(word_freq, phrase)['Value']
         else:
@@ -83,7 +84,10 @@ def format_dict(word_freq={}):
                 if next_word != 'Value':
                     temp.append(next_word)
                     phrases.append(temp)
-        del phrases[0]
+        index += 1
+    if len(get_dict_value(word_freq, phrases[-1])) == 1 and type(phrases[-1]).__name__ == 'list':
+        print("ok")
+        formated_word_freq[' '.join(phrases[-1])] = get_dict_value(word_freq, phrases[-1])['Value']
     # print(formated_word_freq)
     return formated_word_freq
 
@@ -95,18 +99,23 @@ def output_result(word_freq):
             print(item)
 
 
-if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument('path')
-    parser.add_argument('num')
-    args = parser.parse_args()
-    path = args.path
-    num = int(args.num)
+def cal(path, num):
     buffer = process_file(path)
     if buffer:
         word_freq = process_buffer(buffer, num)
         if num != 1:
             word_freq = format_dict(word_freq)
         output_result(word_freq)
+
+
+if __name__ == "__main__":
+    import argparse
+    import cProfile
+
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('path')
+    # parser.add_argument('num')
+    # args = parser.parse_args()
+    # path = args.path
+    # num = int(args.num)
+    cProfile.run("cal('Gone_with_the_wind.txt',2)")
