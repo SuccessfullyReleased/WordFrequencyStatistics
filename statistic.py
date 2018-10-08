@@ -1,11 +1,7 @@
-import re
-
-
 def process_file(path):
     try:
         with open(path, 'r') as file:
             text = file.read()
-            text = re.sub('[^a-zA-Z0-9n]', ' ', text).lower()
     except IOError:
         print("Read File Error!")
         return None
@@ -37,9 +33,10 @@ def get_dict_value(word_freq={}, keys=[]):
 def process_buffer(textString, num=3):
     """当只统计单词时（num == 1），生成<str,int>形式的键值对,
     当统计短语时，生成字典套字典的形式，具体参考sample.json文件"""
+    import re
     if textString:
         word_freq = {}
-        word_list = textString.split()
+        word_list = re.sub('[^a-zA-Z0-9n]', ' ', textString).lower().split()
         if num == 1:
             for word in word_list:
                 if word in word_freq:
@@ -49,13 +46,13 @@ def process_buffer(textString, num=3):
         else:
             count = len(word_list)
             i = 0
-            while i < count:
+            while i < count:  # 因为需要用到索引遍历列表，只能使用while来遍历列表
                 finish = i
-                start = i - num + 1
+                start = i - num + 1  # num表示词组的单词个数限制，start表示以该单词作为词组结尾的第一个单词的索引
                 if start < 0:
-                    start = 0
+                    start = 0  # 处理开始时索引前面没有单词的特殊情况
                 index = i
-                while index >= start:
+                while index >= start:  # 做num次建立节点
                     if word_list[i] in get_dict_value(word_freq, word_list[index: finish]).keys():
                         get_dict_value(word_freq, word_list[index: finish])[word_list[i]]['Value'] += 1
                     else:
@@ -77,16 +74,16 @@ def format_dict(word_freq={}):
         if len(get_dict_value(word_freq, phrase)) == 1 and type(phrase).__name__ == 'list':
             formated_word_freq[' '.join(phrase)] = get_dict_value(word_freq, phrase)['Value']
         else:
-            for nextword in get_dict_value(word_freq, phrase):
+            for next_word in get_dict_value(word_freq, phrase):
                 temp = []
                 if type(phrase).__name__ == 'str':
                     temp.append(phrase)
                 else:
                     temp.extend(phrase)
-                if nextword != 'Value':
-                    temp.append(nextword)
+                if next_word != 'Value':
+                    temp.append(next_word)
                     phrases.append(temp)
-        phrases.pop(0)
+        del phrases[0]
     # print(formated_word_freq)
     return formated_word_freq
 
